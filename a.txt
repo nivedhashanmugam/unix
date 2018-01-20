@@ -1,5 +1,7 @@
-this is my first unix lab 
-jjshsj,sx
-skjsksk
-jskjs
+This is my first unix lab
+Flowers charm us and bring happiness
+They bring beauty to our life
+rose,lily,lotus
+
+
 
