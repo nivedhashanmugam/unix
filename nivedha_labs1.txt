@@ -1,0 +1,44 @@
+1.To create a directory for unix =$ mkdir nivedha
+2.To see the directory created = $ ls
+3.To display all the files in the system = $ cd nivedha
+4.To create a file in unix = $ vim filename 
+5.To create a text document = gedit filename.txt
+
+PRESS ESC AND THE COMMAND
+
+6.To delete a character = x
+7.To undo the deleted character = u
+8. To redo =CTRL-R
+9.To append the text at end of the file = A
+10.To save the file = shift : wq
+11.To remove the changes = shift :q!
+12.To move the cursor at the beginning of the word to delete the word = dw
+13.To move the cursor two words forward = 2w
+14.To move the cursor at the end of the third word = 3e
+15.To move to the start of the line = 0
+16.To delete two words =d2w
+17.To delete the entire line = dd
+18.Puts the previous deleted text after the cursor = p
+19.To replace the letter = r
+20.When the word lubw is typed and the cursor is placed at u then ubw is deleted = ce
+21.To move to the bottom of the file = G
+22.To move to the start of the file = gg
+23.To find a matching = %
+24.To substitute new for old = :s/old/new/g
+25.Backward slash = /
+26.forward slash = ?
+27.To run shell commands = :|
+28.To save the file = :w
+29.To start visual mode inorder to perform operations like delete = v
+30.Filename to insert the content in the current file =:r
+31.To replace more than one character = R
+32.Operator to copy text using visual mode and paste it = y
+33.copy one word = yw
+34.Open a line below the cursor and start the insert mode = o
+35.Open a line above the cursor = O
+36.Insert the text after the cursor = a
+37.Insert text after the end of the line = A
+38.Command moves to the end of the word = e
+39.Operator copies text ,p puts it  = y
+40.Enters replace mode untill <ESC> is pressed = R
+41.To jump from one window to the other = Ctrl-w
