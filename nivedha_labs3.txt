@@ -1,0 +1,72 @@
+FILTER COMMAND
+
+Sl no	Name	  USN number
+1	Anu	   1001
+2	Priya	   1002
+3	Sharmi	   1003
+4	Supriya	   1004
+1	Anu	   1001
+6	Ashwini	   1005
+7	Brinda	   1006
+8	Divya	   1007
+9	Bhagya	   1008
+10	Aishwarya  1009
+
+Head Command
+$ head -n 6 cseunix.csv
+Sl no,USN number,Name
+1,Anu,1001
+2,Priya,1002
+3,Sharmi,1003
+4,Supriya,1004
+5,Anu,1001
+
+ head -c 10 cseunix.csv
+Sl no,USN
+
+TAIL COMMAND
+$ tail -n 3 cseunix.csv
+8,Divya,1007
+9,Bhagya,1008
+10,Aishwarya,1009
+
+WC COMMAND
+$ wc cseunix.csv
+ 11  13 160 cseunix.csv
+
+CUT COMMAND
+
+$ cut -d , -f 2 cseunix.csv
+USN number
+Anu
+Priya
+Sharmi
+Supriya
+Anu
+Ashwini
+Brinda
+Divya
+Bhagya
+Aishwarya
+
+PASTE COMMAND
+ 
+cat csea.csv
+Sl no ,Name,USN no
+1,Appu,2002
+2,Amu,2003
+
+cat cseb.csv
+Sl no,Name,USN no
+1,Aishu,3001
+2,Anu,3002
+
+paste csea.csv cseb.csv
+Sl no ,Name,USN no	Sl no,Name,USN no
+1,Appu,2002	1,Aishu,3001
+2,Amu,2003	2,Anu,3002
+
+
+
+
+
