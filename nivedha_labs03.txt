@@ -1,0 +1,81 @@
+Excersice 1
+
+1.Display 3rd column of cseunix.csv without printing the header "CGPA" also sort the name
+
+cut - remove sections from each line of files
+
+$ cut -d , -f 4 cseunix.csv|grep -v "CGPA"
+9
+5.6
+8.4
+6.7
+9.6
+7.7
+5.9
+7.7
+8.6
+7.9
+
+$ cut -d , -f 2 cseunix.csv|grep -v "Name"|sort
+
+Aishwarya
+Anu
+Anu
+Ashwini
+Bhagya
+Brinda
+Divya
+Priya
+Sharmi
+Supriya
+
+
+
+2.Display current time using date command
+
+date = print or set the system date and time
+
+$ date +%X
+10:28:17  IST
+
+3.Use uniq with all possible option 
+
+$ uniq -c cseunix.csv
+$ uniq -d cseunix.csv
+$ uniq -D cseunix.csv
+$ uniq -i cseunix.csv
+$ uniq -u cseunix.csv
+$ uniq -z cseunix.csv
+
+4.Print number of lines from ls -l option
+
+ls - list directory contents
+
+$ ls -l
+total 52
+drwxr-xr-x 2 cs2016a204 cs2016a204 4096 Jan 16 14:43 Desktop
+drwxr-xr-x 2 cs2016a204 cs2016a204 4096 Jan 16 14:43 Documents
+drwxr-xr-x 2 cs2016a204 cs2016a204 4096 Jan 16 14:43 Downloads
+-rw-r--r-- 1 cs2016a204 cs2016a204 8980 Jan  2 11:43 examples.desktop
+drwxr-xr-x 2 cs2016a204 cs2016a204 4096 Jan 16 14:43 Music
+drwxr-xr-x 2 cs2016a204 cs2016a204 4096 Jan 24 10:19 nivedha
+drwxr-xr-x 2 cs2016a204 cs2016a204 4096 Jan 16 14:43 Pictures
+drwxr-xr-x 2 cs2016a204 cs2016a204 4096 Jan 16 14:43 Public
+drwxr-xr-x 2 cs2016a204 cs2016a204 4096 Jan 16 14:43 Templates
+-rw-r--r-- 1 cs2016a204 cs2016a204  117 Jan 24 09:37 test1
+drwxr-xr-x 2 cs2016a204 cs2016a204 4096 Jan 16 14:43 Videos 
+
+5.Display USN number from 7-14 along with other fields
+
+tail - output the last part of files
+
+$ tail -n 7 cseunix.csv
+1007
+1008
+1009
+1010
+1012
+1013
+1014
+
+
