@@ -15,16 +15,24 @@ $ cut -d , -f 4 cseunix.csv|grep -v "CGPA"
 7.7
 8.6
 7.9
+6.6
+9.4
+8.9
+7.1
 
 $ cut -d , -f 2 cseunix.csv|grep -v "Name"|sort
 
 Aishwarya
+Ammu
 Anu
 Anu
+Anupriya
 Ashwini
 Bhagya
 Brinda
+Darshini
 Divya
+Prasana
 Priya
 Sharmi
 Supriya
@@ -74,6 +82,7 @@ $ tail -n 7 cseunix.csv
 1008
 1009
 1010
+1011
 1012
 1013
 1014
