@@ -1,0 +1,98 @@
+Excersice 1
+
+6.Replace field "Name" with "Student's name" in cseunix.csv
+
+$ tr 'Name' 'Student name' <cseunix.csv
+
+Sl no,Student name,USN number ,CGPA
+1,Anu,1001,9
+2,Priya,1002,5.6
+3,Sharmi,1003,8.4
+4,Supriya,1004,6.7
+1,Anu,1001,9
+5,Ashwini,1006,7.7
+6,Brinda,1007,5.9
+7,Divya,1008,7.7
+8,Bhagya,1009,8.6
+9,Aishwarya,1010,7.9
+10,Ammu,1011,6.6
+11,Anupriya,1012,9.4
+12,Prasana,1013,8.9
+13,Darshini,1014,7.1
+
+
+Exceresice 2
+
+SHELL PROGRAMMING
+ 
+1.Write a shell script to display current time and date using date command 
+
+echo "Today date is `date +%D` "
+echo "Today time is `date +%X` "
+Today date is 07/02/18
+Today time is 10:04:26 IST
+
+
+2.Write a shell script to check whether a given number is positive or negative
+
+echo "Enter a number "
+read n
+if [ $n -gt 0 ]
+then
+        echo "Number is positive"
+else
+        echo "Number is negative"
+fi
+
+     
+Enter a number 
+3
+Number is positive
+
+Enter a number 
+-9
+Number is negative
+
+
+3.Write a shell script to display student grade
+
+echo "Enter the marks "
+read m
+if [ $m -ge 90 ]
+then
+        echo "A grade"
+elif [ $m -ge 80 ]
+then
+        echo "B grade"
+elif [ $m -ge 70 ]
+then
+        echo "C grade"
+elif [ $m -ge 60 ]
+then
+        echo "D grade"
+else
+        echo "Fail"
+fi
+
+Enter the marks 
+92
+A grade
+
+Enter the marks 
+88
+B grade
+
+Enter the marks 
+72
+C grade
+
+Enter the marks 
+68
+D grade
+
+Enter the marks 
+54
+Fail
+
+
+              
