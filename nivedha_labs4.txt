@@ -5,7 +5,7 @@ Excersice 1
 $ sed -i 's/Name/Student_name/g' cseunix.csv
 $ cat cseunix.csv
 
-Sl no,Name,USN number ,CGPA
+Sl no,Student_name,USN number ,CGPA
 1,Anu,1001,9
 2,Priya,1002,5.6
 3,Sharmi,1003,8.4
