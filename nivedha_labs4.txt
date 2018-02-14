@@ -2,9 +2,10 @@ Excersice 1
 
 6.Replace field "Name" with "Student's name" in cseunix.csv
 
-$ tr 'Name' 'Student name' <cseunix.csv
+$ sed -i 's/Name/Student_name/g' cseunix.csv
+$ cat cseunix.csv
 
-Sl no,Student name,USN number ,CGPA
+Sl no,Name,USN number ,CGPA
 1,Anu,1001,9
 2,Priya,1002,5.6
 3,Sharmi,1003,8.4
@@ -20,6 +21,25 @@ Sl no,Student name,USN number ,CGPA
 12,Prasana,1013,8.9
 13,Darshini,1014,7.1
 
+
+7.Sort only name field using position shell programming
+
+$ cut -d , -f 2 cseunix.csv|grep -v "Name"|sort +1 -2
+
+Aishwarya
+Ammu
+Anu
+Anu
+Anupriya
+Ashwini
+Bhagya
+Brinda
+Darshini
+Divya
+Prasana
+Priya
+Sharmi
+Supriya
 
 Exceresice 2
 
@@ -95,4 +115,3 @@ Enter the marks
 Fail
 
 
-              
