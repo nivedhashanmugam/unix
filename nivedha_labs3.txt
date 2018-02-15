@@ -21,7 +21,7 @@ Sl no,USN number,Name
 4,Supriya,1004
 5,Anu,1001
 
- head -c 10 cseunix.csv
+$ head -c 10 cseunix.csv
 Sl no,USN
 
 TAIL COMMAND
@@ -51,17 +51,17 @@ Aishwarya
 
 PASTE COMMAND
  
-cat csea.csv
+$ cat csea.csv
 Sl no ,Name,USN no
 1,Appu,2002
 2,Amu,2003
 
-cat cseb.csv
+$ cat cseb.csv
 Sl no,Name,USN no
 1,Aishu,3001
 2,Anu,3002
 
-paste csea.csv cseb.csv
+$ paste csea.csv cseb.csv
 Sl no ,Name,USN no	Sl no,Name,USN no
 1,Appu,2002	1,Aishu,3001
 2,Amu,2003	2,Anu,3002
