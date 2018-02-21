@@ -1,6 +1,6 @@
 Excersice 3
 
-Use of case in shell script for arithmetic opertaions
+* Use of case in shell script for arithmetic opertaions
 
 echo "Enter two number "
 read a b
@@ -13,6 +13,8 @@ case $choice in
         4) echo `expr $a / $b` ;;
         5) echo "exit" ;;
 esac
+
+OUTPUT
 
 To add two numbers
 
@@ -46,4 +48,51 @@ Enter two number
 4
 2
 
+* Use of case in shell script for string operations
 
+a="abc"
+b="efg"
+
+if [ $a = $b ]
+then
+   echo "$a = $b : a is equal to b"
+else
+   echo "$a = $b: a is not equal to b"
+fi
+
+if [ $a != $b ]
+then
+   echo "$a != $b : a is not equal to b"
+else
+   echo "$a != $b: a is equal to b"
+fi
+
+if [ -z $a ]
+then
+   echo "-z $a : string length is zero"
+else
+   echo "-z $a : string length is not zero"
+fi
+
+if [ -n $a ]
+then
+   echo "-n $a : string length is not zero"
+else
+   echo "-n $a : string length is zero"
+fi
+
+if [ $a ]
+then
+   echo "$a : string is not empty"
+else
+   echo "$a : string is empty"
+fi
+
+
+OUTPUT
+
+abc = efg: a is not equal to b
+abc != efg : a is not equal to b
+-z abc : string length is not zero
+-n abc : string length is noy zero 
+abc : string is not empty
