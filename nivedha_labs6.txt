@@ -1,6 +1,6 @@
 Excersice 3
 
-* Use of case in shell script for arithmetic opertaions
+* USE OF CASE IN SHELL SCRIPT FOR ARITHMETIC OPERATION
 
 echo "Enter two number "
 read a b
@@ -48,7 +48,7 @@ Enter two number
 4
 2
 
-* Use of case in shell script for string operations
+* STRING OPERATION
 
 a="abc"
 b="efg"
@@ -96,3 +96,43 @@ abc != efg : a is not equal to b
 -z abc : string length is not zero
 -n abc : string length is noy zero 
 abc : string is not empty
+
+
+* FILE OPERATION
+
+
+file="nivedha/nivedha_labs3.txt"
+if [ -s $file ]
+then
+   echo "File size is zero"
+ else
+   echo "File size is not zero"
+  fi
+if [ -r $file ]
+then
+   echo "File has read access"
+  else
+   echo "File does not have read access"
+  fi
+if [ -w $file ]
+then
+   echo "File has write permission"
+  else
+   echo "File does not have write permission"
+  fi
+if [ -x $file ]
+then
+   echo "File has execute permission"
+  else
+   echo "File does not have execute permission"
+  fi
+
+
+OUTPUT
+
+File size is not zero
+File has read access
+File has write permission
+File has execute permission
+
+
