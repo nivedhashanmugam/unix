@@ -1,0 +1,49 @@
+Excersice 3
+
+Use of case in shell script for arithmetic opertaions
+
+echo "Enter two number "
+read a b
+echo "1.add 2.sub 3.mult 4.div 5.exit"
+read choice
+case $choice in
+        1) echo `expr $a + $b` ;;
+        2) echo `expr $a - $b` ;;
+        3) echo `expr $a \* $b` ;;
+        4) echo `expr $a / $b` ;;
+        5) echo "exit" ;;
+esac
+
+To add two numbers
+
+Enter two number 
+6 3
+1.add 2.sub 3.mult 4.div 5.exit
+1
+9
+
+To subtract two numbers
+
+Enter two number 
+4 2
+1.add 2.sub 3.mult 4.div 5.exit
+2
+2
+
+To multiply two numbers
+
+Enter two number 
+3 3
+1.add 2.sub 3.mult 4.div 5.exit
+3
+9
+
+To dividde two numbers 
+
+Enter two number 
+14 7
+1.add 2.sub 3.mult 4.div 5.exit
+4
+2
+
+
