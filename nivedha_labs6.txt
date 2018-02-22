@@ -132,7 +132,7 @@ OUTPUT
 
 File size is not zero
 File has read access
-File has write permission
+File does not have write permission
 File has execute permission
 
 
