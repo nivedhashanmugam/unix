@@ -40,7 +40,7 @@ Enter two number
 3
 9
 
-To dividde two numbers 
+To divide two numbers 
 
 Enter two number 
 14 7
