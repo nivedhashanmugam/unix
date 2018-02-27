@@ -95,13 +95,12 @@ drwxr-xr-x 2 cs2016a204 cs2016a204 4096 Jan 16 14:43 Videos
 tail - output the last part of files
 
 $ tail -n 7 cseunix.csv
-1007
-1008
-1009
-1010
-1011
-1012
-1013
-1014
+7,Divya,1008,7.7
+8,Bhagya,1009,8.6
+9,Aishwarya,1010,7.9
+10,Ammu,1011,6.6
+11,Anupriya,1012,9.4
+12,Prasana,1013,8.9
+13,Darshini,1014,7.1
 
 
