@@ -1,0 +1,69 @@
+Excersice 4
+
+1. Shell script to prefix all the filenames with the date dd/mm/YY format
+
+file="/home/nivedha/test"
+cdate=$(date +%d-%m-%Y)
+for file in *
+do      
+        mv "$file" "$cdate"_"$file"
+done 
+
+OUTPUT
+
+28-02-2018_t1
+28-02-2018_t2
+28-02-2018_t3
+
+2.Grep with all possible options
+
+$ cat > sample
+Unix is a programming language that use commands
+unix is case sensitive
+It helps to perform multi task
+
+With "-i" option
+$ grep -i "unix" sample
+
+Unix is a programming language that use commands
+unix is case sensitive
+
+
+With "-v" option
+$ grep -v "unix" sample
+
+Unix is a programming language that use commands
+It helps to perform multi task
+
+
+With "-n" option
+grep -n "unix" sample
+
+2:unix is case sensitive
+
+
+With "-c" option
+$ grep -c "unix" sample
+
+1
+
+
+With "-l" option
+$ grep -l "unix" sample
+
+sample
+
+
+With "-e" option
+$ grep -e "unix" -e "Unix" sample
+
+Unix is a programming language that use commands
+unix is case sensitive
+
+
+With "-x" option
+$ grep -x "unix" sample
+
+
+
+
