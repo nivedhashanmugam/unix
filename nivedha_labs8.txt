@@ -25,45 +25,64 @@ It helps to perform multi task
 With "-i" option
 $ grep -i "unix" sample
 
-Unix is a programming language that use commands
-unix is case sensitive
-
-
 With "-v" option
 $ grep -v "unix" sample
-
-Unix is a programming language that use commands
-It helps to perform multi task
-
 
 With "-n" option
 grep -n "unix" sample
 
-2:unix is case sensitive
-
-
 With "-c" option
 $ grep -c "unix" sample
-
-1
-
 
 With "-l" option
 $ grep -l "unix" sample
 
-sample
-
-
 With "-e" option
 $ grep -e "unix" -e "Unix" sample
-
-Unix is a programming language that use commands
-unix is case sensitive
-
 
 With "-x" option
 $ grep -x "unix" sample
 
+3.Setting permission to the files/directories
+
+$ cat > sample
+$ chmod u+x sample
+ls -l sample
+
+-rwxr--r-- 1 cs2016a204 cs2016a204 28 Feb 10:15 sample
+
+4.File related commands
+
+* cp command
+Create two files s1 and s2 
+$ cat > s1
+hi
+$ cat > s2
+hello
+$ cp s2m s1
+$ cat s1
+
+hello
+
+* rm command
+The created file s1 gets deleted
+$ rm s1
+$ cat s1
+
+cat: s1: No such file or directory
+
+*mv command
+Create two files n1 and n2
+$ cat > n1
+hi
+$ cat > n2
+hello
+$ mv n2 n1
+$ cat n1
+
+hello
+
+* cmp command
 
 
 
