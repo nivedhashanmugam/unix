@@ -50,4 +50,16 @@ Emp_id:Name:Designation:Salary:Phone_number
 1009:Sendhil:Staff:59000:7890452316
 1010:Mohan:Staff:60000:9873510342
 
+Excersice 5
+
+1.Display the details of the employee whose designation is manager/Manager.
+
+$ sed -n '/[mM]anager/p' emp.lst
+
+1001|Aishwarya|Manager|70000|9203451209
+1005|Mahesh|manager|70000|9206678099
+
+
+
+
 
