@@ -138,6 +138,22 @@ Output
 
 
 
+5.Use of find an xargs command
+
+find command is used to find files
+$ find *lst -print
+
+Output
+emp.lst
+
+xargs command is used to build and execute command lines from standard input
+$ echo a b c d e f|xargs -n 3
+
+Output
+a b c
+d e f
+
+
 
 
 
