@@ -59,7 +59,7 @@ $ sed -n '/[mM]anager/p' emp.lst
 1001|Aishwarya|Manager|70000|9203451209
 1005|Mahesh|manager|70000|9206678099
 
-2.Display the employee details whose name is Arun|Anupriya
+
 
 
 
