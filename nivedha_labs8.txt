@@ -72,7 +72,7 @@ $ cat > s1
 hi
 $ cat > s2
 hello
-$ cp s2m s1
+$ cp s2 s1
 $ cat s1
 
 Output
