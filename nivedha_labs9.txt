@@ -77,5 +77,9 @@ Emp_id|Name|Designation|Salary|Phone_number
 1009|Sendhil|Staff|59000|7890452316
 1010|Mohan|Staff|60000|9873510342
 
+3.Display the details of 1st and 2nd employee
 
+$ sed -n '2,3p' emp.lst
 
+1001|Aishwarya|Director|70000|9203451209
+1002|Brinda|staff|59000|8892396232
