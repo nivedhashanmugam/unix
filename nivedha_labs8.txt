@@ -154,7 +154,18 @@ a b c
 d e f
 
 
+6.Write a regular expression that takes care of the pattern agarwal with all possible cases
 
+$ grep [aA][gg]g*[ar][ra]wal test
+
+Aggarwal
+Agarwal
+Agrawal
+Aggrawal
+aggarwal
+agarwal
+aggrawal
+agrawal
 
 
 
