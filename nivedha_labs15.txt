@@ -1,3 +1,5 @@
+Implementation of file operation using a menu driven shell script in dialog
+
 INPUT=/tmp/menu.sh.$$
 OUTPUT=/tmp/output.sh.$$
 vi_editor=${EDITOR-vi}
@@ -11,22 +13,27 @@ dialog --backtitle "File operations" --title "${t}" --clear --msgbox "$(<$OUTPUT
 copy1(){
         cp $s1 $s2
         display_output 6 60 "copy"
+        echo "Files succesfully copied" >$OUTPUT
 }
 move1(){
         mv $s1 $s2
         display_output 13 25 "move"
+        echo "Files succesfully moved" >$OUTPUT
 }
 common1(){
         cmp $s1 $s2
         display_output 7 57 "common"
+        echo "Files succesfully compared" >OUTPUT
 }
 difference1(){
         diff $s1 $s2
         display_output 6 60 "difference"
+        echo "succesfully found the difference between the files" >$OUTPUT
 }
 remove1(){
         rm $s1
         display_output 13 25 "remove"
+        echo "File succesfully removed" >OUTPUT
 }
 while true
 do
