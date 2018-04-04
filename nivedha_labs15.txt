@@ -23,7 +23,7 @@ move1(){
 common1(){
         cmp $s1 $s2
         display_output 7 57 "common"
-        echo "Files succesfully compared" >OUTPUT
+        echo "Files succesfully compared" >$OUTPUT
 }
 difference1(){
         diff $s1 $s2
@@ -33,7 +33,7 @@ difference1(){
 remove1(){
         rm $s1
         display_output 13 25 "remove"
-        echo "File succesfully removed" >OUTPUT
+        echo "File succesfully removed" >$OUTPUT
 }
 while true
 do
