@@ -10,7 +10,5 @@ echo -e "\n"
 Use of wall command in unix
 
 wall writes a message to other users.
-
 $ wall "Hello Everyone" 
-
 When the wall command is used in some username it sends a message to all other users in that system
